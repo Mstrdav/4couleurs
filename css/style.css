@@ -1,0 +1,64 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Desktop - 1 */
+body {
+    width: 100%;
+    height: 100vh;
+    padding: 10vh 10vw;
+
+    background: radial-gradient(62.99% 123.39% at 6.53% 96.04%, #F40000 0%, rgba(253, 118, 19, 0.897083) 79.17%, rgba(255, 148, 23, 0.87) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+svg {
+    max-height: 80vh;
+    display: block;
+    position: relative;
+    height: auto;
+    max-width: 80vw;
+}
+
+.color_selector {
+    padding: 5px;
+    position: absolute;
+    top: -40px;
+    opacity: 0%;
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0px 0px 5px;
+    z-index: 10;
+    transform: translate(-50%,25%);
+    display: flex;
+    flex-direction: column;
+    
+    transition: opacity ease 0.2s;
+    transition: top ease-in-out 0.2s, left ease-in-out 0.2s;
+}
+
+.color_selector .color_row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    align-content: space-around;
+    align-items: flex-end;
+}
+
+.color_selector .color_row .color {
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    border-radius: 8px;
+}
+
+#red { background: red; }
+#blue { background: blue; }
+#green { background: green; }
+#yellow { background: yellow; }

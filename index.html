@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Le Theorème des 4 couleurs</title>
+    <link rel="stylesheet" href="css/style.css
+    ">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Color selector, affiché au clic sur une zone -->
+    <div id="color_selector" class="color_selector">
+        <div class="color_row">
+            <div class="color" id="red"></div>
+            <div class="color" id="blue"></div>
+        </div>
+        <div class="color_row">
+            <div class="color" id="green"></div>
+            <div class="color" id="yellow"></div>
+        </div>
+    </div>
+
+
+    <svg width="791" height="514" viewBox="0 0 791 514" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <rect class="zone" id="zone1" x="0.5" y="0.5" width="479" height="256" stroke="black" />
+        <rect class="zone" x="480.5" y="0.5" width="310" height="256" stroke="black" />
+        <rect class="zone" x="628.5" y="257.5" width="162" height="256" stroke="black" />
+        <rect class="zone" x="0.5" y="257.5" width="627" height="256" stroke="black" />
+    </svg>
+    <script src="script/main.js"></script>
+</body>
+
+</html>
