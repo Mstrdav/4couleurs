@@ -1,14 +1,31 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f7f7f7;
+    -moz-scrollbar: none;
+    font-size: 22px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 /*
 Avoir une image opaque et en fond d'écran plein
 */
-header {
-    background: black;
-}
-#banner {
+
+header img {
+    display: inline;
     width: 100%;
-    height:100vh;
-    opacity: 0.7;
-}/*
+    height: 105vh;
+    filter: brightness(0.3);
+}
+
+/*
 Image banner ---END---
 */
 
@@ -18,38 +35,22 @@ Image banner ---END---
 Titre du header
 */
 #titreHeader {
-    padding: 10px;
-    margin-right: 50px;
     position: absolute;
-    top: 30%;
-    left: 20%;
-    font-family: Impact, "Arial Black", sans-serif;
-    color:navajowhite;
-    font-size:80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    font-family: 'Poppins', Impact, "Arial Black", sans-serif;
+    line-height: 96%;
+    color: navajowhite;
+    font-size: 80px;
+    width: 80%;
     text-shadow: 0.1em 0.1em 0.2em black;
-}/*
-Titre du header ---END---
-*/
+}
+
 
 
 /*
-Couleurs des mots multicolores
-*/
-#blue {
-    color:blue;
-} 
-
-#yellow {
-    color:goldenrod;
-} 
-
-#red {
-    color:red;
-} 
-
-#green {
-    color:green;
-}/*
 Mots multicolores ---END---
 */
 
@@ -57,53 +58,80 @@ Mots multicolores ---END---
 /*
 Corps de la page
 */
-body {
-    /*background:#D9D9FF;*/
-    background: lightgray;
-    margin-bottom: 50px;
+#container {
+    width: 100%;
+    background: #f7f7f7;
+    padding: 10vw;
+
 }
 
 /*
 Style des sous-titres
 */
 h2 {
-    margin: 0px 100px;
-    padding: 25px 0px;
-    font-family: "Verdana", Geneva, sans-serif;
+    font-family: "Poppins", Geneva, sans-serif;
     font-size: 33px;
-}/*
----END---
-*/
+    font-weight: 600;
+    color: #4a575d;
+    margin: 20px 0px;
+}
 
 /*
 Style des paragraphes
 */
 p {
-    margin: 0px 100px;
-    padding: 10px;
     font-family: "Verdana", Geneva, sans-serif;
-    font-size: 22px;
-}/*
----END---
-*/
+    color: #6e7275;
+}
 
+/* FOOTER */
+footer {
+    background: #222;
+    
+    padding: 10vw;
+    color: #ddd;
+}
+
+footer h2 {
+    margin: 0;
+    Color: #ddd;
+    margin-bottom: 10px;
+}
+
+/* SPECIAL */
 
 /*
 Texte souligné ou plus grand
 */
 .underline {
-    text-decoration: red underline;
-    
+    border-bottom: 5px orange solid;
 }
 
 .big {
     font-size: 26px;
-}/*
----END---
-*/
+}
+
+a {
+    color: orange;
+    text-decoration: none;
+}
+
 
 /*
-@media screen and (max-width: 800px) {
-    
-}
+Couleurs des mots multicolores
 */
+#blue {
+    color: blue;
+}
+
+#yellow {
+    color: goldenrod;
+}
+
+#red {
+    color: red;
+}
+
+#green {
+    color: green;
+}
