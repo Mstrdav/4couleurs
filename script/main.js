@@ -13,7 +13,6 @@ var zone2 = document.getElementById('zone2');
 var zone3 = document.getElementById('zone3');
 var zone4 = document.getElementById('zone4');
 
-
 // Events on Zones
 zone1.addEventListener('click', function(event) {
     fill(this, selectedColor);
