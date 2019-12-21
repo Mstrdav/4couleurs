@@ -48,12 +48,31 @@ Titre du header
     text-shadow: 0.1em 0.1em 0.2em black;
 }
 
+/* SVG carte animée */
+svg {
+    max-height: 80vh;
+    display: block;
+    height: auto;
+    max-width: 80vw;
+    fill: #C4C4C4;
+    padding: 30px 0;
+}
 
+svg .blue {
+    animation: blue 10s infinite;
+}
 
-/*
-Mots multicolores ---END---
-*/
+svg .red {
+    animation: red 10s infinite 0.25s;
+}
 
+svg .yellow {
+    animation: yellow 10s infinite 0.5s;
+}
+
+svg .green {
+    animation: green 10s infinite 0.75s;
+}
 
 /*
 Corps de la page
@@ -120,18 +139,79 @@ a {
 /*
 Couleurs des mots multicolores
 */
-#blue {
+.blueText {
     color: blue;
 }
 
-#yellow {
-    color: goldenrod;
+.yellowText {
+    color: gold;
 }
 
-#red {
+.redText {
     color: red;
 }
 
-#green {
+.greenText {
     color: green;
+}
+
+/* ANIMATIONS */
+@keyframes blue {
+    0% {
+        fill: #C4C4C4;
+    }
+    10% {
+        fill: blue;
+    }
+    60% {
+        fill: blue;
+    }
+    70% {
+        fill: #C4C4C4;
+    }
+}
+
+@keyframes red {
+    0% {
+        fill: #C4C4C4;
+    }
+    10% {
+        fill: red;
+    }
+    60% {
+        fill: red;
+    }
+    70% {
+        fill: #C4C4C4;
+    }
+}
+
+@keyframes yellow {
+    0% {
+        fill: #C4C4C4;
+    }
+    10% {
+        fill: gold;
+    }
+    60% {
+        fill: gold;
+    }
+    70% {
+        fill: #C4C4C4;
+    }
+}
+
+@keyframes green {
+    0% {
+        fill: #C4C4C4;
+    }
+    10% {
+        fill: green;
+    }
+    60% {
+        fill: green;
+    }
+    70% {
+        fill: #C4C4C4;
+    }
 }

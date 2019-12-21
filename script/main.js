@@ -98,7 +98,7 @@ var remove = function(colorToRemove) {
 
 var fill = function(zone, colorToFill) {
     if(colorToFill==0) {
-        zone.style.fill = "white";
+        zone.style.fill = "#C4C4C4";
     } else if(colorToFill==1) {
         zone.style.fill = "blue";
     } else if(colorToFill==2) {
