@@ -12,12 +12,12 @@
 <body>
     <!-- SVG -->
     <svg width="791" height="514" viewBox="0 0 791 514" fill="white" xmlns="http://www.w3.org/2000/svg">
-        <rect id="zone1" class="zone" x="0.5" y="0.5" width="479" height="256" stroke="black" />
+        <rect id="zone1" voisins="zone2 zone3 zone4" class="zone" x="0.5" y="0.5" width="479" height="256" stroke="black" />
         <rect id="zone2" class="zone" x="480.5" y="0.5" width="310" height="256" stroke="black" />
-        <rect id="zone3" class="zone" x="628.5" y="257.5" width="162" height="256" stroke="black" />
-        <rect id="zone4" class="zone" x="0.5" y="257.5" width="627" height="256" stroke="black" />
+        <rect id="zone4" class="zone" x="628.5" y="257.5" width="162" height="256" stroke="black" />
+        <rect id="zone3" class="zone" x="0.5" y="257.5" width="627" height="256" stroke="black" />
     </svg>
-    
+
     <!-- COLOR PICKER -->
     <div id="colorPicker">
         <div id="blue" class="color blue cropLeft"></div>
@@ -25,9 +25,23 @@
         <div id="green" class="color green"></div>
         <div id="yellow" class="color yellow cropRight"></div>
     </div>
-    
+
+    <!-- NEXT LEVEL INTERFACE -->
+    <div id="endPannel">
+        <h1>Bravo !</h1><br />
+        <a href="canva1.html">
+            <img src="data/reloadIcon.png" alt="rejouer" height="30">
+        </a>
+        <a href="">
+            <img src="data/nextIcon.png" alt="suivant" height="30">
+        </a>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="script/toast.js"></script>
     <script src="script/main.js"></script>
     <script src="script/map/map1.js"></script>
+
 </body>
 
 </html>

@@ -10,6 +10,9 @@ body {
     height: 100vh;
     padding: 10vh 10vw;
     background: #E5E5E5;
+    
+    /* On cache ce qui dépasse, pour que la boit 'end pannel' ne soit pas visible. */
+    overflow: hidden;
 }
 
 .redCursor {
@@ -28,6 +31,8 @@ body {
     cursor: url(../data/yellowCursor.png), auto;
 }
 
+/* SVG */
+
 svg {
     max-height: 80vh;
     display: block;
@@ -37,12 +42,14 @@ svg {
     transform: translate(-50%, -50%);
     height: auto;
     max-width: 80vw;
-    fill: #C4C4C4;
 }
 
 svg * {
-    stroke: none; 
+    stroke: none;
+    fill: #C4C4C4;
 }
+
+/* COLOR PICKER */
 
 #colorPicker {
     position: absolute;
@@ -95,6 +102,26 @@ svg * {
     opacity: 1;
     transform: scale(1.2);
     z-index: 10;
-    
+
     transition: transform ease-in 0.2s;
+}
+
+/* END PANNEL */
+#endPannel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 500%);
+    
+    padding: 60px;
+    text-align: center;
+    background: #000;
+    color: white;
+    border-radius: 18px;
+    
+    transition: transform 0.4s ease;
+}
+
+#endPannel a {
+    margin: 0 15px;
 }

@@ -7,6 +7,9 @@ var yellow = document.getElementById('yellow');
 // SELECTED COLOR
 var selectedColor = 0;
 
+// END PANNEL
+var endPannel = document.getElementById('endPannel');
+
 // ZONES
 var zone1 = document.getElementById('zone1');
 var zone2 = document.getElementById('zone2');
@@ -14,25 +17,25 @@ var zone3 = document.getElementById('zone3');
 var zone4 = document.getElementById('zone4');
 
 // Events on Zones
-zone1.addEventListener('click', function(event) {
+zone1.addEventListener('click', function (event) {
     fill(this, selectedColor);
 });
 
-zone2.addEventListener('click', function(event) {
+zone2.addEventListener('click', function (event) {
     fill(this, selectedColor);
 });
 
-zone3.addEventListener('click', function(event) {
+zone3.addEventListener('click', function (event) {
     fill(this, selectedColor);
 });
 
-zone4.addEventListener('click', function(event) {
+zone4.addEventListener('click', function (event) {
     fill(this, selectedColor);
 });
 
 // Events on ColorPicker
 blue.addEventListener('click', function (event) {
-        document.body.classList = "";
+    document.body.classList = "";
     if (selectedColor != 1) {
         remove(selectedColor);
         document.body.classList.add("blueCursor");
@@ -58,7 +61,7 @@ red.addEventListener('click', function (event) {
 });
 
 green.addEventListener('click', function (event) {
-        document.body.classList = "";
+    document.body.classList = "";
     if (selectedColor != 3) {
         remove(selectedColor);
         document.body.classList.add("greenCursor");
@@ -83,29 +86,32 @@ yellow.addEventListener('click', function (event) {
     }
 });
 
-var remove = function(colorToRemove) {
-    if(colorToRemove==0) {
-    } else if(colorToRemove==1) {
+var remove = function (colorToRemove) {
+    if (colorToRemove == 0) {} else if (colorToRemove == 1) {
         blue.classList.remove("selected");
-    } else if(colorToRemove==2) {
+    } else if (colorToRemove == 2) {
         red.classList.remove("selected");
-    } else if(colorToRemove==3) {
+    } else if (colorToRemove == 3) {
         green.classList.remove("selected");
     } else {
         yellow.classList.remove("selected");
     }
 }
 
-var fill = function(zone, colorToFill) {
-    if(colorToFill==0) {
+var fill = function (zone, colorToFill) {
+    if (colorToFill == 0) {
         zone.style.fill = "#C4C4C4";
-    } else if(colorToFill==1) {
+    } else if (colorToFill == 1) {
         zone.style.fill = "blue";
-    } else if(colorToFill==2) {
+    } else if (colorToFill == 2) {
         zone.style.fill = "red";
-    } else if(colorToFill==3) {
+    } else if (colorToFill == 3) {
         zone.style.fill = "green";
     } else {
         zone.style.fill = "yellow";
+    }
+
+    if(verif()) {
+        endPannel.style.transform = "translate(-50%, -50%)"
     }
 }
