@@ -35,7 +35,7 @@ zone4.addEventListener('click', function (event) {
 
 // Events on ColorPicker
 blue.addEventListener('click', function (event) {
-    document.body.classList = "";
+    document.body.classList = "dark";
     if (selectedColor != 1) {
         remove(selectedColor);
         document.body.classList.add("blueCursor");
@@ -48,7 +48,7 @@ blue.addEventListener('click', function (event) {
 });
 
 red.addEventListener('click', function (event) {
-    document.body.classList = "";
+    document.body.classList = "dark";
     if (selectedColor != 2) {
         remove(selectedColor);
         document.body.classList.add("redCursor");
@@ -61,7 +61,7 @@ red.addEventListener('click', function (event) {
 });
 
 green.addEventListener('click', function (event) {
-    document.body.classList = "";
+    document.body.classList = "dark";
     if (selectedColor != 3) {
         remove(selectedColor);
         document.body.classList.add("greenCursor");
@@ -74,7 +74,7 @@ green.addEventListener('click', function (event) {
 });
 
 yellow.addEventListener('click', function (event) {
-    document.body.classList = "";
+    document.body.classList = "dark";
     if (selectedColor != 4) {
         remove(selectedColor);
         document.body.classList.add("yellowCursor");
