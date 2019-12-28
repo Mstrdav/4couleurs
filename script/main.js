@@ -18,7 +18,7 @@ var zone4 = document.getElementById('zone4');
 
 // ELEMENTS WITH DARK THEME
 var bg = document.getElementById('bg');
-var firstLink = document.getElementById('fristLink');
+var firstLink = document.getElementById('firstLink');
 var secondLink = document.getElementById('secondLink');
 // +EndPannel
 
@@ -160,25 +160,31 @@ var verif = function () {
 **                                      **
 \* ************************************ */
 
-window.onload = function () {
-    console.log(window.location.search.substr(1));
+window.addEventListener('load', function (event) {
     if (window.location.search.substr(1) == 'dark') {
+        console.log('Theme should be switched.');
         switchTheme();
     }
-}
+});
 
-switcher.addEventListener('click', switchTheme);
+switcher.addEventListener('click', function (event) {
+    switchTheme();
+});
 
 var switchTheme = function () {
+    console.log('Theme switched !');
     bg.classList.toggle('dark');
     endPannel.classList.toggle('dark');
     switcher.classList.toggle('dark');
 
     //links
-    if (firstLink.href == LINK1) {
+    var locationBasis = window.location.href.split('canva')[0];
+    if (firstLink.href == locationBasis + LINK1) {
+        console.log('links changed to dark.');
         firstLink.href = LINK1DARK;
         secondLink.href = LINK2DARK;
     } else {
+        console.log('links changed to bright.');
         firstLink.href = LINK1;
         secondLink.href = LINK2;
     }

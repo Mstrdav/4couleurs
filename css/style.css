@@ -140,6 +140,10 @@ footer h2 {
     filter: invert();
 }
 
+#switcher:hover {
+    cursor: pointer;
+}
+
 /* SPECIAL */
 
 /*
