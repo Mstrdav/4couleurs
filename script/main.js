@@ -18,6 +18,8 @@ var zone4 = document.getElementById('zone4');
 
 // ELEMENTS WITH DARK THEME
 var bg = document.getElementById('bg');
+var firstLink = document.getElementById('fristLink');
+var secondLink = document.getElementById('secondLink');
 // +EndPannel
 
 // THEME SWITCHER
@@ -126,6 +128,32 @@ var fill = function (zone, colorToFill) {
     }
 }
 
+var verif = function () {
+    console.log("");
+    console.log("Zone cliquée !");
+    for ([key, value] of map) {
+        var color = key.style.fill;
+        console.log("Vérification de la zone " + key.id);
+        if (color == "" || color == NEUTRE) {
+            console.log("Pas de couleur");
+            return false;
+        } else {
+            console.log("Couleur : " + color);
+            for (zone of value) {
+                if (zone.style.fill == "" || zone.style == NEUTRE || zone.style.fill == color) {
+                    console.log("Voisin " + zone.id + " non valide.")
+
+                    return false;
+                } else {
+                    console.log("Voisin " + zone.id + " valide.")
+                }
+            }
+        }
+    }
+
+    return true;
+}
+
 /* ************************************ *\
 **                                      **
 **            THEME SOMBRE              **
@@ -145,4 +173,13 @@ var switchTheme = function () {
     bg.classList.toggle('dark');
     endPannel.classList.toggle('dark');
     switcher.classList.toggle('dark');
+
+    //links
+    if (firstLink.href == LINK1) {
+        firstLink.href = LINK1DARK;
+        secondLink.href = LINK2DARK;
+    } else {
+        firstLink.href = LINK1;
+        secondLink.href = LINK2;
+    }
 }
