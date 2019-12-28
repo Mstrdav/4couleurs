@@ -10,12 +10,6 @@ var selectedColor = 0;
 // END PANNEL
 var endPannel = document.getElementById('endPannel');
 
-// ZONES
-var zone1 = document.getElementById('zone1');
-var zone2 = document.getElementById('zone2');
-var zone3 = document.getElementById('zone3');
-var zone4 = document.getElementById('zone4');
-
 // ELEMENTS WITH DARK THEME
 var bg = document.getElementById('bg');
 var firstLink = document.getElementById('firstLink');
@@ -25,21 +19,22 @@ var secondLink = document.getElementById('secondLink');
 // THEME SWITCHER
 var switcher = document.getElementById('switcher');
 
-// Events on Zones
-zone1.addEventListener('click', function (event) {
-    fill(this, selectedColor);
-});
+// On load events, theme and zone events
+window.addEventListener('load', function (event) {
+    // Theme switching
+    if (window.location.search.substr(1) == 'dark') {
+        console.log('Theme should be switched.');
+        switchTheme();
+    }
 
-zone2.addEventListener('click', function (event) {
-    fill(this, selectedColor);
-});
-
-zone3.addEventListener('click', function (event) {
-    fill(this, selectedColor);
-});
-
-zone4.addEventListener('click', function (event) {
-    fill(this, selectedColor);
+    // Events on Zones
+    console.log(map);
+    for ([zone, voisins] of map) {
+        console.log(zone);
+        zone.addEventListener('click', function (event) {
+            fill(this, selectedColor);
+        });
+    }
 });
 
 // Events on ColorPicker
@@ -159,13 +154,6 @@ var verif = function () {
 **            THEME SOMBRE              **
 **                                      **
 \* ************************************ */
-
-window.addEventListener('load', function (event) {
-    if (window.location.search.substr(1) == 'dark') {
-        console.log('Theme should be switched.');
-        switchTheme();
-    }
-});
 
 switcher.addEventListener('click', function (event) {
     switchTheme();
