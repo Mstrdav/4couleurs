@@ -16,6 +16,13 @@ var zone2 = document.getElementById('zone2');
 var zone3 = document.getElementById('zone3');
 var zone4 = document.getElementById('zone4');
 
+// ELEMENTS WITH DARK THEME
+var bg = document.getElementById('bg');
+// +EndPannel
+
+// THEME SWITCHER
+var switcher = document.getElementById('switcher');
+
 // Events on Zones
 zone1.addEventListener('click', function (event) {
     fill(this, selectedColor);
@@ -111,9 +118,22 @@ var fill = function (zone, colorToFill) {
         zone.style.fill = "yellow";
     }
 
-    if(verif()) {
+    if (verif()) {
         endPannel.style.transform = "translate(-50%, -50%)"
         document.body.classList = "";
         remove(selectedColor);
+        selectedColor = 0;
     }
 }
+
+/* ************************************ *\
+**                                      **
+**            THEME SOMBRE              **
+**                                      **
+\* ************************************ */
+
+switcher.addEventListener('click', function (event) {
+    bg.classList.toggle('dark');
+    endPannel.classList.toggle('dark');
+    switcher.classList.toggle('dark');
+});
