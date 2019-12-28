@@ -132,8 +132,17 @@ var fill = function (zone, colorToFill) {
 **                                      **
 \* ************************************ */
 
-switcher.addEventListener('click', function (event) {
+window.onload = function () {
+    console.log(window.location.search.substr(1));
+    if (window.location.search.substr(1) == 'dark') {
+        switchTheme();
+    }
+}
+
+switcher.addEventListener('click', switchTheme);
+
+var switchTheme = function () {
     bg.classList.toggle('dark');
     endPannel.classList.toggle('dark');
     switcher.classList.toggle('dark');
-});
+}
