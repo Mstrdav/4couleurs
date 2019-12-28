@@ -74,7 +74,7 @@ green.addEventListener('click', function (event) {
 });
 
 yellow.addEventListener('click', function (event) {
-    document.body.classList = "dark";
+    document.body.classList = "";
     if (selectedColor != 4) {
         remove(selectedColor);
         document.body.classList.add("yellowCursor");
@@ -113,5 +113,7 @@ var fill = function (zone, colorToFill) {
 
     if(verif()) {
         endPannel.style.transform = "translate(-50%, -50%)"
+        document.body.classList = "";
+        remove(selectedColor);
     }
 }
