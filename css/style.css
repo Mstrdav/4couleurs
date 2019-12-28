@@ -226,8 +226,3 @@ Couleurs des mots multicolores
         fill: #C4C4C4;
     }
 }
-
-/* THEME SOMBRE */
-.dark {
-    filter: invert();
-}

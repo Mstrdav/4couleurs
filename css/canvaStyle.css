@@ -44,6 +44,10 @@ body {
     background: #f7f7f7;
 }
 
+#bg.dark {
+    background: #333;
+}
+
 /* SVG */
 
 svg {
@@ -138,4 +142,9 @@ svg * {
 
 #endPannel a {
     margin: 0 15px;
+}
+
+#endPannel.dark {
+    background: #111;
+    color: white;
 }
