@@ -157,7 +157,7 @@ footer h2 {
 Texte souligné ou plus grand
 */
 .underline {
-    border-bottom: 5px orange solid;
+    border-bottom: 3px orange solid;
 }
 
 .big {
