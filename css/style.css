@@ -173,19 +173,19 @@ a {
 /*
 Couleurs des mots multicolores
 */
-#blueText {
+.blueText {
     color: blue;
 }
 
-#yellowText {
+.yellowText {
     color: gold;
 }
 
-#redText {
+.redText {
     color: red;
 }
 
-#greenText {
+.greenText {
     color: green;
 }
 
