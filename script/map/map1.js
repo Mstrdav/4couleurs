@@ -1,5 +1,4 @@
 // CONSTANTES
-const NEUTRE = "rgb(196, 196, 196)";
 const LINK1DARK = "canva1.html?dark"
 const LINK1 = "canva1.html";
 const LINK2DARK = "canva2.html?dark";
