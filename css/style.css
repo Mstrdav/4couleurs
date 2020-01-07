@@ -106,6 +106,12 @@ h2 {
 /*
 Style des paragraphes
 */
+
+#pscr {
+    text-indent: inherit;
+    padding: 2px 0;
+}
+
 p {
     font-family: "Verdana", Geneva, sans-serif;
     color: #6e7275;
@@ -113,6 +119,7 @@ p {
     text-align: justify;
     text-indent: 40px;
 }
+
 
 /* FOOTER */
 footer {
@@ -166,19 +173,19 @@ a {
 /*
 Couleurs des mots multicolores
 */
-.blueText {
+#blueText {
     color: blue;
 }
 
-.yellowText {
+#yellowText {
     color: gold;
 }
 
-.redText {
+#redText {
     color: red;
 }
 
-.greenText {
+#greenText {
     color: green;
 }
 

@@ -17,20 +17,20 @@
         <img src="data/banner.jpg" />
 
         <h1 id="titreHeader">
-            ISN 2020.<br />Le théorème des 4 <span id="blue">co</span><span id="yellow">ul</span><span id="red">eu</span><span id="green">rs</span>
+            ISN 2020.<br />Le théorème des 4 <span id="blueText">co</span><span id="yellowText">ul</span><span id="redText">eu</span><span id="greenText">rs</span>
         </h1>
     </header>
 
     <div id="container" class="dark">
-        <h2>Introduction au théorème des 4 <span id="blue">co</span><span id="yellow">ul</span><span id="red">eu</span><span id="green">rs</span> :
+       <p>Bienvenue sur ce site ! Tu découvriras ici plein d’informations sur le théorème des 4 couleurs ainsi qu’un petit jeu qui pourrait te plaire:)
+       </p>
+        <h2>Définition du théorème des 4 <span id="blueText">co</span><span id="yellowText">ul</span><span id="redText">eu</span><span id="greenText">rs</span> :
         </h2>
-        <p>En 1852, Francis Guthrie s’amuse à colorier une carte des cantons d’Angleterre et remarque que <span class="underline">4 couleurs suffisent</span>.
-            En bon mathématicien qu’il est, il se demande si c’est généralisable à n’importe quelle carte. Le problème s’avèrera plus compliqué que prévu, puisque la réponse n’arrivera qu’un siècle plus tard.
+        <p>En mathématiques, le théorème des 4 couleurs nous explique comment colorier une carte d’une façon quelque peu particulière… <br />
+        Il suffirait d’uniquement <span class="underline">4 couleurs</span> pour colorier une carte fragmentée sans qu’il n’y ait jamais la même couleur de part et d’autre d’une frontière… C’est ce que nous allons voir !
         </p>
-        <p>
-            Est-il possible de les colorier de façon à ce que deux régions partageant une frontière soient toujours de couleur différente ?
-            Peut-on colorier proprement une carte avec seulement 5 couleurs ? 4 couleurs ? 3 couleurs ou 2 couleurs ?
-        </p>
+        <h2>Exemple de carte</h2>
+        <p>Voici une carte coloriée en respectant le théorème des 4 couleurs.</p>
         <svg viewBox="0 0 759 613" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="187" height="151" fill="#C4C4C4" class="blue" />
             <path d="M191 0H378V151V303L191 203V151V0Z" fill="#C4C4C4" class="red" />
@@ -48,39 +48,30 @@
             <path d="M191 440L330 341L378 446V613H191V440Z" fill="#C4C4C4" class="yellow" />
             <rect y="462" width="187" height="151" fill="#C4C4C4" class="blue" />
         </svg>
-        <p>...
-            <!-- Les trois petits points-->
+        <p>
+        On remarque que si l’on prend n’importe quelle région de la carte et que l’on regarde toutes les régions qui lui sont frontalières, aucune d’entre elle n’a la même couleur que celle du centre.
+        </p>
+        <p>
+        C’est une propriété intéressante qui a été découverte grâce au travail de nombreux mathématiciens du XIXe et du XXe siècle.
         </p>
 
-        <img src="">
-        <!--Image de la carte en couleur-->
-
-        <img src="">
-        <!--Image d'une carte qui ne respecte pas les conditions-->
-        <p>
-            Exemple faux
+        <h2>Petite leçon d’histoire </h2>
+        <p>En 1852, Francis Guthrie s’amuse à colorier une carte des cantons d’Angleterre et remarque que 4 couleurs suffisent pour qu’il n’y ait jamais 2 régions adjacentes de la même couleur. En bon mathématicien qu’il est (et qui s’ennuie un peu trop), il se demande si c’est généralisable à n’importe quelle carte. Le problème s’est avéré plus compliqué que prévu, puisque la réponse n’arrivera qu’un siècle plus tard.
         </p>
         <p>
-            Quand Francis Guthrie observe en 1852 ce phénomène sur sa carte d’Angleterre, il s’empresse d’en parler à son ancien professeur, Auguste de Morgan.
-            Intrigué par le problème mais sans réponse, il en parle à William Hamilton, qui lui répond gentiment qu’il a "d’autre projets plus intéressant pour le moment" que de colorier des cartes.
-            Malgré tout, de Morgan s'entête et parle de ce problème à tout son entourage, dont Arthur Cayley qui écrira le premier article décrivant les difficultés de la question.
-        </p>
-
-        <h2> Explications : </h2>
-        <p>
-            Il suffirait d’uniquement quatre couleurs pour colorier une carte fragmentée sans qu’il n’y ait jamais la même couleur de part et d’autre d’une frontière… C’est ce que nous allons voir !
+        Il se demandait s’il était possible de colorier ces cartes de façon à ce que deux régions partageant une frontière soient toujours de couleur différente ? Peut-on colorier proprement une carte avec seulement 5 couleurs ? 4 couleurs ? 3 couleurs ou 2 couleurs ?
         </p>
         <p>
-            On supposera que les régions sont toujours en un seul morceau.
-            <!-- explication math à ajouter -->
+        Quand Francis Guthrie observe en 1852 ce phénomène sur sa carte d’Angleterre, il s’empresse d’en parler à son ancien professeur. Malheureusement il obtient peu d’aide de ses confrères car ils ont tous "d’autres projets plus intéressants pour le moment" que de colorier des cartes. 
+        </p>
+        <p>
+        Le problème va de mathématiciens en mathématiciens et Arthur Cayley écrira le premier article décrivant les difficultés de la question.
         </p>
 
-        <h2>Donc ...?</h2>
-        <p>
-            Bref, le théorème des 4 couleurs énonce que n’importe quelle carte peut être colorée proprement avec seulement 4 couleurs.
+        <h2>Finalement… ?</h2>
+        <p>Bref, le théorème des 4 couleurs énonce que n’importe quelle carte peut être colorée proprement avec seulement 4 couleurs.
         </p>
-        <p>
-            Essaye de colorier ces cartes avec le moins de couleurs de façon à ce que les frontières soient toujours de couleur différente !
+        <p>Essaye de colorier ces cartes en respectant le théorème des 4 <span id="blueText">co</span><span id="yellowText">ul</span><span id="redText">eu</span><span id="greenText">rs</span> !
         </p>
         <p>
             <a href="canva1.html">Joue au jeu !</a>
@@ -88,8 +79,9 @@
     </div>
     <footer>
         <h2>Sources :</h2>
-        <p><a title="Source : Eljj" href="http://eljjdx.canalblog.com/archives/2016/10/25/34470621.html">El-jj</a><br />
-            <a title="Cursor icons" target="_blank" href="/icons/set/cursor--v1">Cursor icons</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        <p id="pscr"><a title="Source : Eljj" href="http://eljjdx.canalblog.com/archives/2016/10/25/34470621.html">El-jj</a>
+        </p>
+        <p id="pscr"><a title="Cursor icons" target="_blank" href="/icons/set/cursor--v1">Cursor icons</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
         </p>
     </footer>
 </body>
