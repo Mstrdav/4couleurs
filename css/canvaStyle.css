@@ -63,8 +63,12 @@ svg {
 }
 
 svg * {
-    stroke: none;
+    stroke: #F7F7F7;
     fill: #C4C4C4;
+}
+
+.dark + svg * {
+    stroke: #333;
 }
 
 /* COLOR PICKER */
