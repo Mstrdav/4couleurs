@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Le Theorème des 4 couleurs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/canvaStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="bg"></div>
+
+    <!-- SVG -->
+    <svg width="577" height="356" viewBox="0 0 577 356" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path id="zone1" d="M513.5 49.5H0.5V0.5H576.5V253.502L448.998 254L448.5 254.002V254.5V304.5H352.5V267.5H417.335H417.835V267V203.5H513.5H514V203V50V49.5H513.5Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone2" d="M449.5 254.998L576.5 254.502V355.5H0.5V50.5H127.5V100.5H64H63.5V101V305V305.5H64H449H449.5V305V254.998Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone3" x="128.5" y="50.5" width="127" height="50" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone4" x="256.5" y="50.5" width="127" height="50" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone5" d="M449 100.5H384V50.5H420.031H513V202.5H449.002L449.5 101.002L449.502 100.5H449Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone6" d="M142.5 152V202.5H64.5V152V101.5H175.5V151.5H143H142.5V152Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone7" x="176.5" y="101.5" width="159" height="50" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone8" d="M369 151.5H336.5V101.5H368H448.5V202.5H369.5V152V151.5H369Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone9" d="M222.5 178V202.5H143.5V152.5H255.5V177.5H223H222.5V178Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone10" d="M288 177.5H256.5V152.5H288H368.5V202.5H288.5V178V177.5H288Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone11" x="223.5" y="178.5" width="64" height="50" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone12" d="M112 267.5H159.5V304.5H64.5V203.5H111.5V267V267.5H112Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone13" d="M176 242.5H207.5V266.5H112.5V203.5H175.5V242V242.5H176Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone14" d="M223 229.5H255.5V241.5H176.5V203.5H222.5V229V229.5H223Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone15" d="M288.5 229V203.5H335.5V241.5H288H256.5V229.5H288H288.5V229Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone16" x="208.5" y="242.5" width="95" height="24" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone17" d="M336.5 242V203.5H416.856V266.5H336H304.5V242.5H336H336.5V242Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone18" x="160.5" y="267.5" width="95" height="37" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone19" x="256.5" y="267.5" width="95" height="37" fill="#C4C4C4" stroke="#F7F7F7" />
+    </svg>
+
+
+    <!-- COLOR PICKER -->
+    <div id="colorPicker">
+        <div id="blue" class="color blue cropLeft"></div>
+        <div id="red" class="color red"></div>
+        <div id="green" class="color green"></div>
+        <div id="yellow" class="color yellow cropRight"></div>
+    </div>
+
+    <!-- NEXT LEVEL INTERFACE -->
+    <div id="endPannel">
+        <h1>Bravo !</h1><br />
+        <a id="firstLink" href="canva4.html">
+            <img src="data/reloadIcon.png" alt="rejouer" height="30">
+        </a>
+        <a id="secondLink" href="canva5.html">
+            <img src="data/nextIcon.png" alt="suivant" height="30">
+        </a>
+    </div>
+
+    <!-- THEME SWITCHER -->
+    <img src="data/switcher.svg" alt="Changer de theme" height="35" id="switcher">
+
+    <!-- SCRIPT -->
+    <script src="script/map/map4.js"></script>
+    <script src="script/main.js"></script>
+
+</body>
+
+</html>
