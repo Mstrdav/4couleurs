@@ -1,8 +1,8 @@
 // CONSTANTES
-const LINK1DARK = "canva5.html?dark"
-const LINK1 = "canva5.html";
-const LINK2DARK = "canva6.html?dark";
-const LINK2 = "canva6.html";
+const LINK1DARK = "canva6.html?dark"
+const LINK1 = "canva6.html";
+const LINK2DARK = "canva7.html?dark";
+const LINK2 = "canva7.html";
 
 // ZONES
 {
