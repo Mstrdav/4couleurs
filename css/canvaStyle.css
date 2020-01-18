@@ -40,7 +40,7 @@ body {
     top: 0px;
     left: 0px;
 
-    z-index: 0.5;
+    z-index: 0;
     background: #f7f7f7;
 }
 
@@ -128,6 +128,39 @@ svg * {
     transition: transform ease-in 0.2s;
 }
 
+/* THEME SWITCHER */
+#switcher {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    transform: translate(-50%,-50%);
+}
+
+#switcher.dark {
+    filter: invert();
+}
+
+#switcher:hover {
+    cursor: pointer;
+}
+
+#clearButton {
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    transform: translate(-50%,-50%);
+    
+    filter: grayscale() brightness(0.1);
+}
+
+#clearButton:hover {
+    cursor: pointer;
+}
+
+#clearButton.dark {
+    filter: grayscale() brightness(0.1) invert();
+}
+
 /* END PANNEL */
 #endPannel {
     position: absolute;
@@ -152,3 +185,5 @@ svg * {
     background: #111;
     color: white;
 }
+
+

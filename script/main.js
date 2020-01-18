@@ -21,6 +21,7 @@ var secondLink = document.getElementById('secondLink');
 // La variable pour changer le thème du jeu
 var switcher = document.getElementById('switcher');
 
+var clearButton = document.getElementById('clearButton');
 // On charge la page, puis elle appelle la fonction qui détecte si 
 // le thème est dark ou pas en cherchant dans l'URL le "?dark"
 window.addEventListener('load', function (event) {
@@ -179,6 +180,7 @@ var switchTheme = function () {
     bg.classList.toggle('dark');
     endPannel.classList.toggle('dark');
     switcher.classList.toggle('dark');
+    clearButton.classList.toggle('dark');
 
     // Dans le lien, quand le thème est dart, il ajoute ?dark à l'URL et le rajoute à chaque fois
     // Qu'on appelle une fonction qui est sur le end pannel (Recommencer ou Next)
@@ -194,3 +196,8 @@ var switchTheme = function () {
         secondLink.href = LINK2;
     }
 }
+
+// Reload de la page (pour enlever les couleurs)
+clearButton.addEventListener('click', function (event) {
+    window.location.replace(firstLink.href);
+});
