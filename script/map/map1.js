@@ -15,5 +15,5 @@ var map = new Map([
     [zone1, [zone2, zone3]],
     [zone2, [zone1, zone3, zone4]],
     [zone3, [zone1, zone2, zone4]],
-    [zone4, [zone2, zone3]]
+    [zone4, [zone2, zone3]],
 ]);
