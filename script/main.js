@@ -9,6 +9,9 @@ var yellow = document.getElementById('yellow');
 // La couleur que la souris à en mémoire exemple 1=rouge, 2=bleu,....
 var selectedColor = 0;
 
+// Le panneau de début qui affiche le nom du niveau, et qui doit être animé.
+var levelTitle = document.getElementById('level-title');
+
 // Le panneau de fin qui permet de donner comme choix (recommencer ou prochaine carte)
 var endPannel = document.getElementById('endPannel');
 
@@ -40,6 +43,13 @@ window.addEventListener('load', function (event) {
             fill(this, selectedColor);
         });
     }
+    
+    setTimeout(function() {
+        levelTitle.classList = "animated";
+    }, 500);
+    setTimeout(function() {
+        levelTitle.classList = "";
+    }, 3000);
 });
 
 // Quand on clique sur une couleur dans le pannel de couleur
