@@ -107,7 +107,7 @@ h2 {
 Style des paragraphes
 */
 
-#pscr {
+.source {
     text-indent: inherit;
     padding: 2px 0;
 }
@@ -120,6 +120,19 @@ p {
     text-indent: 40px;
 }
 
+.button {
+    font-family: "Poppins", 'Verdana', Geneva, sans-serif;
+    border: 2px solid orange;
+    padding: 20px;
+
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: #333;
+
+    transition: background 0.3s ease;
+}
 
 /* FOOTER */
 footer {
