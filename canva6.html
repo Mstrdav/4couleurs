@@ -1,1 +1,76 @@
-<!-- CANVA 6 -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Niveau 6 - Des carrés...</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/canvaStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="bg"></div>
+
+    <!-- SVG -->
+    <svg viewBox="0 0 542 413" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path id="zone1" d="M41 375.5H279.5V412.5H0.5L0.5 0.5H40.5L40.5 375V375.5H41Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone2" d="M493.098 40.5H41.5V0.5H541.5V412.5H280.5V375.5H493H493.5L493.5 375L493.598 41.0001L493.598 40.5H493.098Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone3" x="41.5" y="41.5" width="112" height="40" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone4" x="154.5" y="41.5" width="112" height="40" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone5" x="267.5" y="41.5" width="112" height="40" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone6" x="380.5" y="41.5" width="112" height="40" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone7" x="41.5" y="374.5" width="292" height="53" transform="rotate(-90 41.5 374.5)" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone8" d="M404 122.5H95.5L95.5 82.5H492.5V374.5H342.5V333.5H449H449.5V333V229V228.5H449H404.5V123V122.5H404Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone9" x="95.5" y="332.5" width="209" height="55" transform="rotate(-90 95.5 332.5)" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone10" x="151.5" y="123.5" width="133" height="44" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone11" x="285.5" y="123.5" width="118" height="44" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone12" x="151.5" y="290.5" width="122" height="76" transform="rotate(-90 151.5 290.5)" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone13" x="228.5" y="246.5" width="78" height="74" transform="rotate(-90 228.5 246.5)" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone14" x="303.5" y="290.5" width="122" height="100" transform="rotate(-90 303.5 290.5)" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone15" x="228.5" y="247.5" width="74" height="43" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone16" x="151.5" y="291.5" width="133" height="41" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone17" x="285.5" y="291.5" width="118" height="41" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone18" x="404.5" y="332.5" width="103" height="44" transform="rotate(-90 404.5 332.5)" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone19" x="95.5" y="333.5" width="112" height="41" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone20" x="208.5" y="333.5" width="133" height="41" fill="#C4C4C4" stroke="#F7F7F7" />
+    </svg>
+
+    <!-- COLOR PICKER -->
+    <div id="colorPicker">
+        <div id="blue" class="color blue cropLeft"></div>
+        <div id="red" class="color red"></div>
+        <div id="green" class="color green"></div>
+        <div id="yellow" class="color yellow cropRight"></div>
+    </div>
+
+    <!-- START INTERFACE -->
+    <div id="level-title">
+        <h1>NIVEAU 6</h1>
+        <h2>Des carrés...</h2>
+    </div>
+
+    <!-- NEXT LEVEL INTERFACE -->
+    <div id="endPannel">
+        <h1>Bravo !</h1><br />
+        <a id="firstLink" href="canva6.html">
+            <img src="data/reloadIcon.png" alt="rejouer" height="30">
+        </a>
+        <a id="secondLink" href="canva7.html">
+            <img src="data/nextIcon.png" alt="suivant" height="30">
+        </a>
+    </div>
+
+    <!-- RELOAD BUTTON (ingame) -->
+    <img src="data/reloadIcon.png" alt="rejouer" width="40" id="clearButton">
+
+    <!-- THEME SWITCHER -->
+    <img src="data/switcher.svg" alt="Changer de theme" height="50" id="switcher">
+
+    <!-- SCRIPT -->
+    <script src="script/map/map6.js"></script>
+    <script src="script/main.js"></script>
+
+</body>
+
+</html>
