@@ -1,1 +1,67 @@
-canva 2
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Niveau 2 - Premier défi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/canvaStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="bg"></div>
+
+    <!-- SVG -->
+    <svg viewBox="0 0 456 352" xmlns="http://www.w3.org/2000/svg">
+        <rect id="zone1" x="0.5" y="0.5" width="455" height="351" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone2" d="M99.5 105V305.5H51.5V47.5H195.5V104.5H100H99.5V105Z" stroke="#F7F7F7" />
+        <path id="zone3" d="M354 104.5H196.5V47.5H402.775V305.5H212.5V256.5H354H354.5V256V105V104.5H354Z" stroke="#F7F7F7" />
+        <rect id="zone4" x="100.5" y="105.5" width="49" height="94" fill="#C4C4C4" />
+        <rect id="zone5" x="150.5" y="105.5" width="76" height="94" fill="#C4C4C4" />
+        <rect id="zone6" x="227.5" y="105.5" width="76" height="94" fill="#C4C4C4" />
+        <rect id="zone7" x="304.5" y="105.5" width="49" height="94" fill="#C4C4C4" />
+        <rect id="zone8" x="100.5" y="200.5" width="87" height="55" fill="#C4C4C4" />
+        <rect id="zone9" x="188.5" y="200.5" width="76" height="55" fill="#C4C4C4" />
+        <rect id="zone10" x="265.5" y="200.5" width="88" height="55" fill="#C4C4C4" />
+        <rect id="zone11" x="100.5" y="256.5" width="111" height="49" fill="#C4C4C4" />
+    </svg>
+
+    <!-- COLOR PICKER -->
+    <div id="colorPicker">
+        <div id="blue" class="color blue cropLeft"></div>
+        <div id="red" class="color red"></div>
+        <div id="green" class="color green"></div>
+        <div id="yellow" class="color yellow cropRight"></div>
+    </div>
+    
+    <!-- LEVEL TITLE -->
+    <div id="level-title">
+        <h1>NIVEAU 2</h1>
+        <h2>Premier Défi</h2>
+    </div>
+   
+    <!-- NEXT LEVEL INTERFACE -->
+    <div id="endPannel">
+        <h1>Bravo !</h1><br />
+        <a id="firstLink" href="canva2.html">
+            <img src="data/reloadIcon.png" alt="rejouer" height="30">
+        </a>
+        <a id="secondLink" href="canva3.html">
+            <img src="data/nextIcon.png" alt="suivant" height="30">
+        </a>
+    </div>
+
+    <!-- RELOAD BUTTON (ingame) -->
+    <img src="data/reloadIcon.png" alt="rejouer" width="40" id="clearButton">
+
+    <!-- THEME SWITCHER -->
+    <img src="data/switcher.svg" alt="Changer de theme" height="50" id="switcher">
+
+    <!-- SCRIPT -->
+    <script src="script/map/map2.js"></script>
+    <script src="script/main.js"></script>
+
+</body>
+
+</html>
