@@ -64,7 +64,6 @@ var map = new Map([
     [zone15, [zone5, zone11, zone14, zone16, zone17, zone18, zone19]],
     [zone16, [zone5, zone10, zone11, zone15, zone19]],
     [zone17, [zone14, zone15, zone18, zone22]],
-
     [zone18, [zone15, zone17, zone19, zone22, zone23]],
     [zone19, [zone5, zone15, zone16, zone18, zone23, zone24, zone25]],
     [zone20, [zone12, zone14, zone21, zone26, zone33]],
