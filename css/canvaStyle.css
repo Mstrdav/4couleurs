@@ -166,7 +166,7 @@ svg * {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -200%);
+    transform: translate(-50%, -300%);
 
     background: white;
     padding: 40px;

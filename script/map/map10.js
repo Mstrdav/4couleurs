@@ -197,7 +197,7 @@ var map = new Map([
     [zone64, [zone48, zone52, zone63, zone65, zone70, zone73]],
     [zone65, [zone52, zone55, zone64, zone66, zone68, zone70]],
     [zone66, [zone55, zone57, zone65, zone67, zone68]],
-    [zone67, [zone56, zone57, zone66, zone67, zone68, zone69]],
+    [zone67, [zone56, zone57, zone66, zone68, zone69]],
     [zone68, [zone65, zone66, zone67, zone69, zone70, zone71]],
     [zone69, [zone54, zone56, zone67, zone68, zone71, zone21]],
     [zone70, [zone64, zone65, zone68, zone71, zone73, zone74]],
