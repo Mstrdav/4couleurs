@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Le Theorème des 4 couleurs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/canvaStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="bg"></div>
+
+    <!-- SVG -->
+    <svg viewBox="0 0 422 442" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path id="zone112" d="M302.5 421.5L421.5 421.5V441.5H302.5V421.5Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone111" d="M221.5 421.5H301.5V441.5H221.5V421.5Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone110" x="321.5" y="401.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone109" x="281.5" y="401.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone108" d="M241.5 401.5H280.5V420.5H241.5V401.5Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone107" x="201.5" y="401.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone106" x="161.5" y="401.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone105" x="121.5" y="401.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone104" x="81.5" y="401.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone103" x="41.5" y="401.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone102" d="M351.5 381V221.5H370.5V381V400.5H341.5V381.5H351H351.5V381Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone101" x="301.5" y="381.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone100" x="261.5" y="381.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone99" x="221.5" y="381.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone98" x="181.5" y="381.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone97" x="141.5" y="381.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone96" x="101.5" y="381.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone95" x="61.5" y="381.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone94" d="M331.5 361V221.5H350.5V361V380.5H321.5V361.5H331H331.5V361Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone93" x="281.5" y="361.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone92" x="241.5" y="361.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone91" x="201.5" y="361.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone90" x="161.5" y="361.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone89" x="121.5" y="361.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone88" x="81.5" y="361.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone87" d="M311.5 341V221.5H330.5V341V360.5H301.5V341.5H311H311.5V341Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone86" x="261.5" y="341.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone85" x="221.5" y="341.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone84" x="181.5" y="341.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone83" x="141.5" y="341.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone82" x="101.5" y="341.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone81" d="M291.5 321V221.5H310.5V321V340.5H281.5V321.5H291H291.5V321Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone80" x="241.5" y="321.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone79" x="201.5" y="321.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone78" x="161.5" y="321.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone77" x="121.5" y="321.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone76" d="M271.5 301V221.5H290.5V301V320.5H261.5V301.5H271H271.5V301Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone75" x="221.5" y="301.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone74" x="181.5" y="301.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone73" x="141.5" y="301.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone72" d="M251.5 281V221.5H270.5V281V300.5H241.5V281.5H251H251.5V281Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone71" x="201.5" y="281.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone70" x="161.5" y="281.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone69" d="M231.5 261V221.5H250.5V261V280.5H221.5V261.5H231H231.5V261Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone68" x="181.5" y="261.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone67" d="M221.5 241V221.5H230.5V241V260.5H201.5V241.5H221H221.5V241Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone66" d="M181 241.5H200.5V260.5H171.5V241V221.5H180.5V241V241.5H181Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone65" d="M171 261.5H180.5V280.5H166H151.5V221.5H170.5V261V261.5H171Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone64" d="M151 281.5H160.5L160.5 300.5H151H131.5V221.5H150.5V281V281.5H151Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone63" d="M131 301.5H140.5V320.5H131H111.5L111.5 221.5H130.5V301V301.5H131Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone62" d="M111 321.5H120.5L120.5 340.5H111H91.5L91.5 221.5H110.5L110.5 321V321.5H111Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone61" d="M91 341.5H100.5V360.5H91H71.5L71.5 221.5H90.5L90.5 341V341.5H91Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone60" d="M71 361.5H80.5V380.5H51.5V361L51.5 221.5H70.5L70.5 361V361.5H71Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone59" d="M51 381.5H60.5V400.5H31.5L31.5 221.5H50.5L50.5 381V381.5H51Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone58" d="M31 401.5H40.5V420.5H21.5L21.5 221.5H30.5L30.5 401V401.5H31Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone57" x="181.5" y="201.5" width="39" height="39" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone56" d="M221 200.5H201.5V181.5H221H240.5V220.5H221.5V201V200.5H221Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone55" d="M180.5 201V220.5H161.5V201V181.5H200.5V200.5H181H180.5V201Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone54" d="M241 180.5H221.5V161.5H241H260.5V220.5H241.5V181V180.5H241Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone53" x="181.5" y="161.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone52" d="M160.5 181V220.5H141.5V181V161.5H180.5V180.5H161H160.5V181Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone51" d="M261 160.5H241.5V141.5H261H280.5V220.5H261.5V161V160.5H261Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone50" x="201.5" y="141.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone49" x="161.5" y="141.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone48" d="M140.5 161V220.5H121.5V161V141.5H160.5V160.5H141H140.5V161Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone47" d="M281 140.5H261.5V121.5H281H300.5V220.5H281.5V141V140.5H281Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone46" x="221.5" y="121.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone45" x="181.5" y="121.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone44" x="141.5" y="121.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone43" d="M120.5 141L120.5 220.5H101.5V141L101.5 121.5H140.5V140.5H121H120.5V141Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone42" d="M301 120.5H281.5V101.5H301H320.5V220.5H301.5V121V120.5H301Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone41" x="241.5" y="101.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone40" x="201.5" y="101.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone39" x="161.5" y="101.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone38" x="121.5" y="101.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone37" d="M100.5 121L100.5 220.5H81.5L81.5 121V101.5H120.5V120.5H101H100.5V121Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone36" d="M321 100.5H301.5V81.5H321H340.5V220.5H321.5V101V100.5H321Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone35" x="261.5" y="81.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone34" x="221.5" y="81.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone33" x="181.5" y="81.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone32" x="141.5" y="81.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone31" x="101.5" y="81.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone30" d="M80.5 101L80.5 220.5H61.5L61.5 101V81.5H100.5V100.5H81H80.5V101Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone29" d="M341 80.5H321.5V61.5H360.5V81V220.5H341.5V81V80.5H341Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone28" x="281.5" y="61.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone27" x="241.5" y="61.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone26" x="201.5" y="61.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone25" x="161.5" y="61.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone24" x="121.5" y="61.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone23" x="81.5" y="61.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone22" d="M60.5 81L60.5 220.5H41.5L41.5 81L41.5 61.5H80.5V80.5H61H60.5V81Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone21" d="M361 60.5H341.5V41.5H380.5V220.5H361.5V61V60.5H361Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone20" x="301.5" y="41.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone19" x="261.5" y="41.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone18" x="221.5" y="41.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone17" x="181.5" y="41.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone16" x="141.5" y="41.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone15" x="101.5" y="41.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone14" x="61.5" y="41.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone13" d="M40.5 61L40.5 220.5H21.5L21.5 61V41.5H60.5V60.5H41H40.5V61Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone12" d="M381 40.5H358.5V21.5H398.5V220.5H381.5V41V40.5H381Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone11" x="319.5" y="21.5" width="38" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone10" x="280.5" y="21.5" width="38" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone9" d="M239.5 21.5H279.5V40.5H239.5V21.5Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone8" x="200.5" y="21.5" width="38" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone7" x="161.5" y="21.5" width="38" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone6" x="120.5" y="21.5" width="40" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone5" x="81.5" y="21.5" width="38" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone4" x="41.5" y="21.5" width="39" height="19" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone3" d="M21 421.5H220.5V441.5H0.5V21.5H40.5V40.5H21H20.5V41V421V421.5H21Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <path id="zone2" d="M399 20.5H142.5V0.5H421.5V21V420.5H361.5V401.5H371H371.5V401V221.5H399H399.5V221V21V20.5H399Z" fill="#C4C4C4" stroke="#F7F7F7" />
+        <rect id="zone1" x="0.5" y="0.5" width="141" height="20" fill="#C4C4C4" stroke="#F7F7F7" />
+    </svg>
+
+    <!-- COLOR PICKER -->
+    <div id="colorPicker">
+        <div id="blue" class="color blue cropLeft"></div>
+        <div id="red" class="color red"></div>
+        <div id="green" class="color green"></div>
+        <div id="yellow" class="color yellow cropRight"></div>
+    </div>
+
+    <!-- NEXT LEVEL INTERFACE -->
+    <div id="endPannel">
+        <h1>Bravo !</h1><br />
+        <a id="firstLink" href="canva10.html">
+            <img src="data/reloadIcon.png" alt="rejouer" height="30">
+        </a>
+        <a id="secondLink" href="fin.html">
+            <img src="data/nextIcon.png" alt="suivant" height="30">
+        </a>
+    </div>
+
+    <!-- RELOAD BUTTON (ingame) -->
+    <img src="data/reloadIcon.png" alt="rejouer" width="40" id="clearButton">
+
+    <!-- THEME SWITCHER -->
+    <img src="data/switcher.svg" alt="Changer de theme" height="50" id="switcher">
+
+    <!-- SCRIPT -->
+    <script src="script/map/map10.js"></script>
+    <script src="script/main.js"></script>
+
+</body>
+
+</html>
