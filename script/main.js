@@ -45,10 +45,12 @@ window.addEventListener('load', function (event) {
     }
     
     setTimeout(function() {
-        levelTitle.classList = "animated";
+        console.log('Starting level...');
+        levelTitle.classList.toggle("animated");
     }, 500);
     setTimeout(function() {
-        levelTitle.classList = "";
+        console.log("Go !");
+        levelTitle.classList.toggle("animated");
     }, 3000);
 });
 
@@ -191,6 +193,7 @@ var switchTheme = function () {
     endPannel.classList.toggle('dark');
     switcher.classList.toggle('dark');
     clearButton.classList.toggle('dark');
+    levelTitle.classList.toggle('dark');
 
     // Dans le lien, quand le thème est dart, il ajoute ?dark à l'URL et le rajoute à chaque fois
     // Qu'on appelle une fonction qui est sur le end pannel (Recommencer ou Next)

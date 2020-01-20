@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Niveau Test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/canvaStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="bg"></div>
+
+    <!-- SVG -->
+    <svg viewBox="0 0 791 514" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <rect id="zone1" voisins="zone2 zone3 zone4" class="zone" x="0.5" y="0.5" width="479" height="256" stroke="black" />
+        <rect id="zone2" class="zone" x="480.5" y="0.5" width="310" height="256" stroke="black" />
+        <rect id="zone4" class="zone" x="628.5" y="257.5" width="162" height="256" stroke="black" />
+        <rect id="zone3" class="zone" x="0.5" y="257.5" width="627" height="256" stroke="black" />
+    </svg>
+
+    <!-- COLOR PICKER -->
+    <div id="colorPicker">
+        <div id="blue" class="color blue cropLeft"></div>
+        <div id="red" class="color red"></div>
+        <div id="green" class="color green"></div>
+        <div id="yellow" class="color yellow cropRight"></div>
+    </div>
+
+    <!-- START INTERFACE -->
+    <div id="level-title">
+        <h1>NIVEAU 0</h1>
+        <h2>TEST</h2>
+    </div>
+
+    <!-- NEXT LEVEL INTERFACE -->
+    <div id="endPannel">
+        <h1>Bravo !</h1><br />
+        <a id="firstLink" href="canvaTest.html">
+            <img src="data/reloadIcon.png" alt="rejouer" height="30">
+        </a>
+        <a id="secondLink" href="canva1.html">
+            <img src="data/nextIcon.png" alt="suivant" height="30">
+        </a>
+    </div>
+
+    <!-- RELOAD BUTTON (ingame) -->
+    <img src="data/reloadIcon.png" alt="rejouer" width="40" id="clearButton">
+
+    <!-- THEME SWITCHER -->
+    <img src="data/switcher.svg" alt="Changer de theme" width="50" id="switcher">
+
+    <!-- SCRIPT -->
+    <script src="script/map/map0.js"></script>
+    <script src="script/main.js"></script>
+
+</body>
+
+</html>

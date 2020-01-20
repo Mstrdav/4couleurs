@@ -166,26 +166,35 @@ svg * {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, -200%);
 
-    background: #333;
+    background: white;
     padding: 40px;
     border-radius: 12px;
-    color: white;
+    color: black;
+    text-align: center;
 
     opacity: 0;
-    display: none;
+    z-index: 100;
 
     transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+}
+
+#level-title h2 {
+    color: orange;
 }
 
 #level-title.animated {
     transform: translate(-50%, -50%);
 
     opacity: 1;
-    display: normal;
 
     transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+}
+
+#level-title.dark {
+    background: black;
+    color: white;
 }
 
 /* END PANNEL */
