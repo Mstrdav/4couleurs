@@ -121,7 +121,7 @@ var remove = function (colorToRemove) {
 }
 // Cette fonction permet de colorier les zones qu'on clique dessus avec une couleur 
 var fill = function (zone, colorToFill) {
-    if (colorToFill == 0) {
+    if ((colorToFill == 0) || (zone.style.fill == "blue" && colorToFill == 1) || (zone.style.fill == "red" && colorToFill == 2) || (zone.style.fill == "green" && colorToFill == 3) || (zone.style.fill == "yellow" && colorToFill == 4)) {
         zone.style.fill = "#C4C4C4";
     } else if (colorToFill == 1) {
         zone.style.fill = "blue";
