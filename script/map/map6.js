@@ -1,3 +1,5 @@
+//map carrés
+
 // CONSTANTES
 const LINK1DARK = "canva6.html?dark"
 const LINK1 = "canva6.html";

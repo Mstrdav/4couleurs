@@ -1,3 +1,5 @@
+//map avant goût
+
 // CONSTANTES
 const LINK1DARK = "canva8.html?dark"
 const LINK1 = "canva8.html";

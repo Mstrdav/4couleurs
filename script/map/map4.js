@@ -1,3 +1,5 @@
+//map difficile
+
 // CONSTANTES
 const LINK1DARK = "canva4.html?dark"
 const LINK1 = "canva4.html";

@@ -1,3 +1,5 @@
+//map boss final
+
 // CONSTANTES
 const LINK1DARK = "canva10.html?dark"
 const LINK1 = "canva10.html";

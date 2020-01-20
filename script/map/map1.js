@@ -1,3 +1,5 @@
+//map france facile
+
 // CONSTANTES
 const LINK1DARK = "canva1.html?dark"
 const LINK1 = "canva1.html";

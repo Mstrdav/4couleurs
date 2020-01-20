@@ -1,3 +1,5 @@
+//map défi
+
 // CONSTANTES
 const LINK1DARK = "canva2.html?dark"
 const LINK1 = "canva2.html";
