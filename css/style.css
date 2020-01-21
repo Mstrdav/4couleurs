@@ -246,3 +246,11 @@ Couleurs des mots multicolores
         fill: #C4C4C4;
     }
 }
+
+/* Gif de fin */
+
+.gif {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+}
