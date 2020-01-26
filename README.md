@@ -4,3 +4,7 @@ Projet du bac blanc pour l'ISN : un site axé autours du théorème des 4 couleu
 Il faut lancer index.html et ensuite laissez vous guider par les flots du site ! (Ne vous perdez pas trop non plus...)
 
 Bonne "correction" et bon jeu !!!
+
+PS: Le site est disponible en ligne ! (à l'adresse suivante) 
+
+https://mstrdav.github.io/G3_GeindreKhunKadri/
