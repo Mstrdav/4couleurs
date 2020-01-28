@@ -7,5 +7,4 @@ Bonne "correction" et bon jeu !!!
 
 PS: Le site est disponible en ligne ! (à l'adresse suivante) 
 
-https://mstrdav.github.io/G3_GeindreKhunKadri/
 http://4couleurs.pirez.me/
