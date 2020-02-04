@@ -1,7 +1,7 @@
 //map france hard
 
 // CONSTANTES
-const LINK1DARK = "canva9.html?dark"
+const LINK1DARK = "canva9.html?dark";
 const LINK1 = "canva9.html";
 const LINK2DARK = "canva10.html?dark";
 const LINK2 = "canva10.html";
