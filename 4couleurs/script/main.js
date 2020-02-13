@@ -25,7 +25,7 @@ var secondLink = document.getElementById('secondLink');
 var switcher = document.getElementById('switcher');
 
 var clearButton = document.getElementById('clearButton');
-// On charge la page, puis elle appelle la fonction qui détecte si 
+// On charge la page, puis elle appelle la fonction qui détecte si
 // le thème est dark ou pas en cherchant dans l'URL le "?dark"
 window.addEventListener('load', function (event) {
     // Theme switching
@@ -34,8 +34,8 @@ window.addEventListener('load', function (event) {
         switchTheme();
     }
 
-    // Sur la carte et ses zones, quand on clique sur la zone, elle remplie la zone avec la couleur 
-    // que la souris a en mémoire 
+    // Sur la carte et ses zones, quand on clique sur la zone, elle remplie la zone avec la couleur
+    // que la souris a en mémoire
     console.log(map);
     for ([zone, voisins] of map) {
         console.log(zone);
@@ -43,7 +43,7 @@ window.addEventListener('load', function (event) {
             fill(this, selectedColor);
         });
     }
-    
+
     setTimeout(function() {
         console.log('Starting level...');
         levelTitle.classList.toggle("animated");
@@ -121,7 +121,7 @@ var remove = function (colorToRemove) {
         yellow.classList.remove("selected");
     }
 }
-// Cette fonction permet de colorier les zones qu'on clique dessus avec une couleur 
+// Cette fonction permet de colorier les zones qu'on clique dessus avec une couleur
 var fill = function (zone, colorToFill) {
     if ((colorToFill == 0) || (zone.style.fill == "blue" && colorToFill == 1) || (zone.style.fill == "red" && colorToFill == 2) || (zone.style.fill == "green" && colorToFill == 3) || (zone.style.fill == "yellow" && colorToFill == 4)) {
         zone.style.fill = "#C4C4C4";
@@ -147,7 +147,7 @@ var fill = function (zone, colorToFill) {
 // Value représente les zones adjacentes à celle qui est coloriée
 // Si une zone est neutre, alors la vérification est fausse
 // Si une couleur a la même valeur (soit couleur) que ses zones adjacentes alors c'est faux
-// Si toutes les zones adjacentes possèdent des valeurs différentes une à une alors c'est vrai 
+// Si toutes les zones adjacentes possèdent des valeurs différentes une à une alors c'est vrai
 // Si c'est vrai le pannel end apparaît
 var verif = function () {
     console.log("");
@@ -185,7 +185,7 @@ var verif = function () {
 switcher.addEventListener('click', function (event) {
     switchTheme();
 });
- 
+
  // La fonction switch thème permet de changer le background et le panneau de fin (end pannel)
 var switchTheme = function () {
     console.log('Theme switched !');

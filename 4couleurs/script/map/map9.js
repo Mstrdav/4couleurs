@@ -115,7 +115,7 @@ var map = new Map([
     [zone7, [zone3, zone4, zone6, zone15, zone16]],
     [zone8, [zone4, zone5, zone9, zone16, zone17, zone18]],
     [zone9, [zone5, zone8, zone10, zone18, zone19]],
-   
+
     [zone10, [zone9, zone11, zone19]],
     [zone11, [zone10, zone12]],
     [zone12, [zone11, zone19, zone20]],
@@ -126,7 +126,7 @@ var map = new Map([
     [zone17, [zone8, zone16, zone18, zone24, zone25]],
     [zone18, [zone8, zone9, zone17, zone19, zone25, zone26]],
     [zone19, [zone9, zone10, zone12, zone18, zone20, zone26]],
-    
+
     [zone20, [zone12, zone19, zone27]],
     [zone21, [zone13, zone14, zone15, zone22, zone31, zone32]],
     [zone22, [zone15, zone16, zone21, zone23, zone32, zone33]],
@@ -137,7 +137,7 @@ var map = new Map([
     [zone27, [zone20, zone26, zone38]],
     [zone28, [zone29, zone39]],
     [zone29, [zone28, zone30, zone39]],
-   
+
     [zone30, [zone13, zone29, zone31, zone39, zone40]],
     [zone31, [zone13, zone21, zone30, zone32, zone41]],
     [zone32, [zone21, zone22, zone31, zone33, zone41, zone42]],
@@ -159,7 +159,7 @@ var map = new Map([
     [zone47, [zone36, zone45, zone46, zone48, zone57]],
     [zone48, [zone36, zone47, zone49, zone60]],
     [zone49, [zone36, zone37, zone48, zone50, zone60, zone61]],
-    
+
     [zone50, [zone49, zone61]],
     [zone51, [zone40, zone41, zone52, zone62]],
     [zone52, [zone41, zone51, zone53, zone62, zone63]],
@@ -170,10 +170,10 @@ var map = new Map([
     [zone57, [zone46, zone47, zone56, zone58]],
     [zone58, [zone47, zone57, zone59, zone60, zone67, zone68, zone69]],
     [zone59, [zone58, zone60, zone69, zone70, zone71]],
-    
+
     [zone60, [zone47, zone48, zone49, zone59, zone61, zone71]],
     [zone61, [zone49, zone50, zone60, zone71]],
-    [zone62, [zone51, zone52, zone63, zone64, zone72]], 
+    [zone62, [zone51, zone52, zone63, zone64, zone72]],
     [zone63, [zone52, zone53, zone54, zone62, zone64]],
     [zone64, [zone54, zone55, zone62, zone63, zone65, zone72, zone73]],
     [zone65, [zone55, zone56, zone64, zone66, zone73, zone74]],
@@ -181,7 +181,7 @@ var map = new Map([
     [zone67, [zone56, zone57, zone58, zone66, zone68]],
     [zone68, [zone58, zone66, zone67, zone69, zone76, zone77]],
     [zone69, [zone58, zone59, zone68, zone70, zone77]],
-    
+
     [zone70, [zone59, zone69, zone71, zone78, zone79]],
     [zone71, [zone59, zone60, zone61, zone78, zone79]],
     [zone72, [zone62, zone64, zone73, zone80]],
@@ -192,7 +192,7 @@ var map = new Map([
     [zone77, [zone68, zone69, zone78]],
     [zone78, [zone70, zone77, zone79]],
     [zone79, [zone70, zone78]],
-    
+
     [zone80, [zone72, zone73, zone81, zone84]],
     [zone81, [zone73, zone74, zone80, zone82, zone84, zone85]],
     [zone82, [zone74, zone75, zone81, zone83, zone85, zone86]],

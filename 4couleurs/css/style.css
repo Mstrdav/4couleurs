@@ -41,7 +41,7 @@ Titre du header
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+
     font-family: 'Poppins', Impact, "Arial Black", sans-serif;
     line-height: 96%;
     color: navajowhite;
@@ -137,7 +137,7 @@ p {
 /* FOOTER */
 footer {
     background: #222;
-    
+
     padding: 10vw;
     color: #ddd;
 }
