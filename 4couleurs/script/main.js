@@ -32,13 +32,13 @@ window.addEventListener('load', function (event) {
     if (window.location.search.substr(1) == 'dark') {
         console.log('Theme should be switched.');
         switchTheme();
+    } else {
+        console.log('url: ' + window.location.search.substr(1));
     }
 
     // Sur la carte et ses zones, quand on clique sur la zone, elle remplie la zone avec la couleur
     // que la souris a en mémoire
-    console.log(map);
     for ([zone, voisins] of map) {
-        console.log(zone);
         zone.addEventListener('click', function (event) {
             fill(this, selectedColor);
         });
@@ -197,7 +197,8 @@ var switchTheme = function () {
 
     // Dans le lien, quand le thème est dart, il ajoute ?dark à l'URL et le rajoute à chaque fois
     // Qu'on appelle une fonction qui est sur le end pannel (Recommencer ou Next)
-    var locationBasis = window.location.href.split('canva')[0];
+    var locationBasis = window.location.href.split('canva')[0] + 'canvas/';
+    console.log(locationBasis);
     if (firstLink.href == locationBasis + LINK1) {
         console.log('links changed to dark.');
         firstLink.href = LINK1DARK;
